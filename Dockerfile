@@ -4,7 +4,6 @@
 FROM openjdk:22-jdk-slim
 
 LABEL maintainer="cursorSoftware.com"
-COPY target/studentRegService-0.0.1-SNAPSHOT.jar studentRegService.jar
-ENTRYPOINT ["java","-jar","studentRegService-0.0.1-SNAPSHOT.jar"]
-CMD ["-start"]
+COPY ./target/studentRegService-0.0.1-SNAPSHOT.jar studentRegService-0.0.1-SNAPSHOT.jar
+CMD ["java","-jar","studentRegService-0.0.1-SNAPSHOT.jar"]
 

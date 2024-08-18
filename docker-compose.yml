@@ -1,6 +1,8 @@
 version: '3'
 services:
   student-reg-service:
+    image: studentregservice
+    container_name: studentregservice
     build:
       context: .
       dockerfile: Dockerfile
