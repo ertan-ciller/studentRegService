@@ -28,7 +28,7 @@ public class StudentController {
 
     }
 
-    @CrossOrigin(origins = "http://localhost:4200")
+    //@CrossOrigin(origins = "http://localhost:4200")
     @PostMapping("/addStudent")
     @ResponseStatus(code = HttpStatus.CREATED)
     public void addStudent(@RequestBody Student newStudent) {
